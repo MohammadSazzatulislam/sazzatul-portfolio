@@ -15,20 +15,20 @@ const Main = () => {
       <div
         className={` ${
           open ? "w-72" : "w-20"
-        } duration-500 h-screen flex flex-col justify-center p-5 pt-8 bg-blue-400 relative`}
+        } duration-500 h-screen flex flex-col justify-center p-5 pt-8 bg-gradient-to-r  from-purple-700 to-purple-700 relative`}
       >
         <FaChevronLeft
           onClick={() => setOpen(!open)}
           className={`${
             !open && "rotate-180"
-          } duration-700 absolute cursor-pointer w-7 h-6 rounded-full -right-3 top-9  border-2 border-blue-500`}
+          } duration-700 absolute cursor-pointer w-7 h-7 rounded-full -right-4 top-9  border-2 border-green-500`}
         ></FaChevronLeft>
         <div>
           <Link to="/">
             <div className="flex gap-x-4 items-center">
               <div>
                 <FaHome
-                  className={`w-7 h-7 cursor-pointer duration-500`}
+                  className={`w-7 h-7 cursor-pointer text-white duration-500`}
                 ></FaHome>
               </div>
               <h1
@@ -44,7 +44,7 @@ const Main = () => {
             <div className="flex mt-6 gap-x-4 items-center">
               <div>
                 <FaUserTie
-                  className={`w-7 h-7 cursor-pointer duration-500`}
+                  className={`w-7 h-7  text-white  cursor-pointer duration-500`}
                 ></FaUserTie>
               </div>
               <h1
@@ -60,7 +60,7 @@ const Main = () => {
             <div className="flex  mt-6 gap-x-4 items-center">
               <div>
                 <FaProjectDiagram
-                  className={`w-7 h-7 cursor-pointer duration-500`}
+                  className={`w-7 h-7  text-white  cursor-pointer duration-500`}
                 ></FaProjectDiagram>
               </div>
               <h1
@@ -76,7 +76,7 @@ const Main = () => {
             <div className="flex  mt-6 gap-x-4 items-center">
               <div>
                 <FaMailBulk
-                  className={`w-7 h-7 cursor-pointer duration-500`}
+                  className={`w-7 h-7  text-white  cursor-pointer duration-500`}
                 ></FaMailBulk>
               </div>
               <h1
@@ -90,7 +90,7 @@ const Main = () => {
           </Link>
         </div>
       </div>
-      <div className="p-7 text-2xl font-semibold flex-1 h-screen">
+      <div className=" w-full h-screen bg-gradient-to-r  from-purple-50 to-purple-100">
         <Outlet></Outlet>
       </div>
     </div>
