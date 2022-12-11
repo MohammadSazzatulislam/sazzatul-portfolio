@@ -28,8 +28,12 @@ const Banner = () => {
               Resume
             </button>
             <div className=" flex justify-around gap-5 items-center">
-              <FaLinkedinIn className="w-7 h-7 p-1 bg-gradient-to-r drop-shadow-xl from-white to-white "></FaLinkedinIn>
-              <FaGithub className="w-7 h-7 p-1 bg-gradient-to-r drop-shadow-xl from-white to-white "></FaGithub>
+              <a href="https://www.linkedin.com/in/mohammad-sazzatul-islam/">
+                <FaLinkedinIn className="w-7 h-7 p-1 bg-gradient-to-r drop-shadow-xl from-white to-white "></FaLinkedinIn>
+              </a>
+              <a href="https://github.com/MohammadSazzatulislam">
+                <FaGithub className="w-7 h-7 p-1 bg-gradient-to-r drop-shadow-xl from-white to-white "></FaGithub>
+              </a>
             </div>
           </div>
         </div>
