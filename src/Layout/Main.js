@@ -12,7 +12,7 @@ const Main = () => {
       <div className="lg:hidden md:hidden">
         <SmallDNav></SmallDNav>
       </div>
-      <div className=" w-full h-screen bg-gradient-to-r  from-purple-50 to-purple-100">
+      <div className=" w-full h-screen ">
         <Outlet></Outlet>
       </div>
     </div>

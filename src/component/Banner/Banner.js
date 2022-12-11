@@ -5,7 +5,7 @@ import logo from "../../image/logo.png";
 const Banner = () => {
   return (
     <div>
-      <div className="flex flex-col mx-auto w-full py-96 lg:py-0 md:py-0 h-screen gap-6 justify-center items-center lg:flex-row md:flex-row">
+      <div className="flex flex-col mx-auto w-full py-[400px] lg:py-0 md:py-0 h-screen gap-6 justify-center items-center lg:flex-row md:flex-row">
         <div className="lg:w-1/2 md:w-1/2 w-full flex justify-center items-center">
           <img
             className="lg:w-96 md:w-80 w-72 drop-shadow-2xl border border-purple-500 rounded-full"
