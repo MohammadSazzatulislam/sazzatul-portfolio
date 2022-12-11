@@ -5,6 +5,7 @@ import {
   FaUserTie,
   FaProjectDiagram,
   FaMailBulk,
+  FaBlog,
 } from "react-icons/fa";
 
 const SmallDNav = () => {
@@ -47,11 +48,20 @@ const SmallDNav = () => {
       ),
       dis: "translate-x-48",
     },
+    {
+      name: "Blog",
+      icon: (
+        <Link to="/blog">
+          <FaBlog className="w-7 h-7 text-white"></FaBlog>
+        </Link>
+      ),
+      dis: "translate-x-64",
+    },
   ];
 
   return (
     <div
-      className=" bg-gradient-to-r flex justify-center fixed  z-40 bottom-0 w-full  from-purple-700 to-purple-700 max-h-[5.4rem]
+      className=" bg-gradient-to-r flex justify-center fixed border-purple-100 border-t-4 z-40 bottom-0 w-full  from-purple-700 to-purple-700 max-h-[5.4rem]
       "
     >
       <ul className="flex relative ">
@@ -60,11 +70,11 @@ const SmallDNav = () => {
         >
           <span
             className="w-3.5 h-3.5 bg-transparent absolute top-4 -left-[18px]
-                  rounded-tr-[11px] shadow-myShadow1"
+                  rounded-tr-[4px] shadow-myShadow1"
           ></span>
           <span
             className="w-3.5 h-3.5 bg-transparent absolute top-4 -right-[18px]
-                  rounded-tl-[11px] shadow-myShadow2"
+                  rounded-tl-[4px] shadow-myShadow2"
           ></span>
         </span>
         {menus.map((menu, i) => (

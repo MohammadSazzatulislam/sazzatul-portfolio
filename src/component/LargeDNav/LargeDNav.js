@@ -1,11 +1,12 @@
 import React, { useState } from "react";
-import { Outlet, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import {
   FaChevronLeft,
   FaHome,
   FaUserTie,
   FaProjectDiagram,
   FaMailBulk,
+  FaBlog,
 } from "react-icons/fa";
 
 const LargeDNav = () => {
@@ -84,6 +85,22 @@ const LargeDNav = () => {
               } `}
             >
               Contact
+            </h1>
+          </div>
+        </Link>
+        <Link to="/blog">
+          <div className="flex  mt-6 gap-x-4 items-center">
+            <div>
+              <FaBlog
+                className={`w-7 h-7  text-white  cursor-pointer duration-500`}
+              ></FaBlog>
+            </div>
+            <h1
+              className={`text-white origin-center font-medium text-xl duration-300  ${
+                !open && "scale-0"
+              } `}
+            >
+              Blog
             </h1>
           </div>
         </Link>

@@ -24,9 +24,16 @@ const Banner = () => {
             applications and experience on the web
           </small>
           <div className="flex mt-4  gap-5 items-center">
-            <button className=" drop-shadow-lg hover:bg-white hover:text-purple-500 hover:bg-gradient-to-r hover:from-white hover:to-white border hover:border hover:border-purple-500  rounded-full px-4 py-2 text-white font-medium text-md bg-gradient-to-r from-purple-500 to-purple-500">
-              Resume
-            </button>
+            <a
+              href=""
+              download={
+                "https://drive.google.com/u/1/uc?id=1HaWWD2z8G-n_uTIdycd5jr5BkPoaH5aJ&export=download"
+              }
+            >
+              <button className=" drop-shadow-lg hover:bg-white hover:text-purple-500 hover:bg-gradient-to-r hover:from-white hover:to-white border hover:border hover:border-purple-500  rounded-full px-4 py-2 text-white font-medium text-md bg-gradient-to-r from-purple-500 to-purple-500">
+                Resume
+              </button>
+            </a>
             <div className=" flex justify-around gap-5 items-center">
               <a href="https://www.linkedin.com/in/mohammad-sazzatul-islam/">
                 <FaLinkedinIn className="w-7 h-7 p-1 bg-gradient-to-r drop-shadow-xl from-white to-white "></FaLinkedinIn>
