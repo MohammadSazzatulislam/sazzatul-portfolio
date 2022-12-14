@@ -2,6 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 import AboutMe from "../component/AboutMe/AboutMe";
 import Blog from "../component/Blog/Blog";
 import Contact from "../component/Contact/Contact";
+import Details from "../component/Details/Details";
 import Projects from "../component/Projects/Projects";
 import Main from "../Layout/Main";
 import ErrorPage from "../Page/ErrorPage/ErrorPage";
@@ -32,6 +33,14 @@ const router = createBrowserRouter([
       {
         path: "/blog",
         element: <Blog></Blog>,
+      },
+      {
+        path: "/details/:id",
+        loader: async ({ params }) =>
+          fetch(
+            `https://sazzatul-portfolio-server.vercel.app/project/${params.id}`
+          ),
+        element: <Details></Details>,
       },
     ],
   },
