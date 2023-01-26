@@ -5,7 +5,7 @@ import { FaArrowDown } from "react-icons/fa";
 
 const Contact = () => {
   return (
-    <div className="flex justify-center w-full h-screen items-center p-5 ">
+    <div className="flex  justify-center w-full h-screen items-center p-5 ">
       <div
         style={{
           backgroundImage: `url(${image})`,

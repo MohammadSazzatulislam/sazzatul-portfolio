@@ -13,14 +13,13 @@ const Projects = () => {
       });
   }, []);
 
-
   return (
-    <div className="flex flex-col lg:flex-row md:flex-row gap-4 justify-center items-center lg:p-5 md:p-5 pt-8 pb-28">
+    <div className=" flex flex-wrap gap-4 lg:px-32 lg:py-5 md:px-32 md:py-5 px-5 pb-32 pt-5 w-full justify-center items-center ">
       {data.map((project) => (
         <>
           <div
             key={project._id}
-            class="max-w-sm rounded overflow-hidden shadow-lg"
+            class="w-auto text-white rounded overflow-hidden shadow-lg"
           >
             <img alt="" class="w-full" src={project.img} />
             <div class="px-6 py-5">

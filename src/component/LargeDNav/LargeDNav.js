@@ -14,8 +14,9 @@ const LargeDNav = () => {
   return (
     <div
       className={` ${
-        open ? "w-72" : "w-20"
-      } duration-500 h-screen flex flex-col justify-center p-5 pt-8 bg-gradient-to-r  from-purple-700 to-purple-700 relative`}
+        open ? "w-72 " : "w-20 "
+      } duration-500 h-full top-0 relative flex flex-col justify-center p-5 pt-8 
+      bg-gradient-to-r  from-purple-700 to-purple-700 `}
     >
       <FaChevronLeft
         onClick={() => setOpen(!open)}
