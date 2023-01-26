@@ -6,7 +6,7 @@ import "./AboutMe.css";
 const AboutMe = () => {
   return (
     <div className="">
-      <div className="flex  flex-col mx-auto lg:flex-row md:flex-row pb-28 lg:py-0 md:py-0">
+      <div className="flex flex-col mx-auto lg:flex-row md:flex-row pb-28 lg:py-5 md:py-5 lg:px-40 md:px-40 ">
         <div className="lg:w-1/2 md:w-1/2 w-full h-1/3 p-5  ">
           <h1 className="lg:mt-28 md:mt-28 lg:text-4xl mg:text-3xl text-xl font-bold border-b-2 pb-2 border-green-600">
             <span className="text-purple-700 text-6xl">A</span>bout Me

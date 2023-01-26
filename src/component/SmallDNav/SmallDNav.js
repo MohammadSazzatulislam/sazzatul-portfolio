@@ -16,7 +16,11 @@ const SmallDNav = () => {
       name: "Home",
       icon: (
         <Link to="/">
-          <FaHome className="w-7 h-7 text-white"></FaHome>
+          <FaHome
+            className={`w-7 h-7 duration-500 text-white ${
+              active === 0 && "text-pink-500"
+            }`}
+          ></FaHome>
         </Link>
       ),
       dis: "translate-x-0",
@@ -25,7 +29,11 @@ const SmallDNav = () => {
       name: "About",
       icon: (
         <Link to="/about">
-          <FaUserTie className="w-7 h-7 text-white "></FaUserTie>
+          <FaUserTie
+            className={`w-7 h-7 duration-500 text-white ${
+              active === 1 && "text-pink-500"
+            }`}
+          ></FaUserTie>
         </Link>
       ),
       dis: "translate-x-16",
@@ -34,7 +42,11 @@ const SmallDNav = () => {
       name: "Projects",
       icon: (
         <Link to="/projects">
-          <FaProjectDiagram className="w-7 h-7 text-white"></FaProjectDiagram>
+          <FaProjectDiagram
+            className={`w-7 h-7 duration-500 text-white ${
+              active === 2 && "text-pink-500"
+            }`}
+          ></FaProjectDiagram>
         </Link>
       ),
       dis: "translate-x-32",
@@ -43,7 +55,11 @@ const SmallDNav = () => {
       name: "Contact",
       icon: (
         <Link to="/contact">
-          <FaMailBulk className="w-7 h-7 text-white"></FaMailBulk>
+          <FaMailBulk
+            className={`w-7 h-7 duration-500 text-white ${
+              active === 3 && "text-pink-500"
+            }`}
+          ></FaMailBulk>
         </Link>
       ),
       dis: "translate-x-48",
@@ -52,7 +68,11 @@ const SmallDNav = () => {
       name: "Blog",
       icon: (
         <Link to="/blog">
-          <FaBlog className="w-7 h-7 text-white"></FaBlog>
+          <FaBlog
+            className={`w-7 h-7 duration-500 text-white ${
+              active === 4 && "text-pink-500"
+            }`}
+          ></FaBlog>
         </Link>
       ),
       dis: "translate-x-64",
@@ -81,8 +101,8 @@ const SmallDNav = () => {
           <li key={i} className="w-16 text-center">
             <Link onClick={() => setActive(i)} className="flex flex-col  pt-6">
               <span
-                className={`z-40 flex justify-center  duration-500 ${
-                  i === active && "-mt-6"
+                className={`z-40 flex justify-center   duration-500 ${
+                  i === active && "-mt-6 "
                 }  `}
               >
                 {menu.icon}
@@ -90,7 +110,7 @@ const SmallDNav = () => {
               <span
                 className={`${
                   active === i
-                    ? "translate-y-4 font-semibold  text-white  duration-700 opacity-100"
+                    ? "translate-y-4 font-semibold  hover:text-pink-500  text-white  duration-700 opacity-100"
                     : "opacity-0 translate-y-14"
                 }`}
               >

@@ -1,9 +1,13 @@
 import React from "react";
 import { useLoaderData } from "react-router-dom";
 import { FaGithub, FaBorderAll } from "react-icons/fa";
+import Loading from "../Loading/Loading";
 
 const Details = () => {
   const product = useLoaderData();
+  if (!product) {
+    return <Loading></Loading>;
+  }
 
   return (
     <div className="mx-auto p-5 pb-40  lg:py-5 lg:px-40  md:py-5  ">
@@ -29,19 +33,19 @@ const Details = () => {
             ))}
           </div>
           <div className="w-full flex justify-center gap-5 items-center  mt-6">
-            <a href={product.Github}>
-              <button class=" flex gap-1 justify-center items-center bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-blue-700 ">
-                <FaGithub className=""></FaGithub> Github Client
+            <a href={product.Client}>
+              <button class=" flex gap-1 justify-center items-center  py-1drop-shadow-lg hover:bg-white hover:text-purple-500 hover:bg-gradient-to-r hover:from-white hover:to-white border hover:border hover:border-purple-500  rounded-full px-3 py-1 text-white font-medium text-md bg-gradient-to-r  from-purple-700 to-purple-700 ">
+                <FaGithub className=""></FaGithub> Client
               </button>
             </a>
-            <a href={product.Github}>
-              <button class=" flex gap-1 justify-center items-center bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-blue-700 ">
-                <FaGithub className=""></FaGithub> Github Server
+            <a href={product.Server}>
+              <button class=" flex gap-1 justify-center items-center  py-1drop-shadow-lg hover:bg-white hover:text-purple-500 hover:bg-gradient-to-r hover:from-white hover:to-white border hover:border hover:border-purple-500  rounded-full px-3 py-1 text-white font-medium text-md bg-gradient-to-r  from-purple-700 to-purple-700">
+                <FaGithub className=""></FaGithub> Server
               </button>
             </a>
             <a href={product.Live}>
-              <button class=" flex gap-1 justify-center items-center text-teal-700 bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold  ">
-                <FaBorderAll></FaBorderAll> Live Demo
+              <button class=" flex gap-1 justify-center items-center  py-1drop-shadow-lg hover:bg-white hover:text-purple-500 hover:bg-gradient-to-r hover:from-white hover:to-white border hover:border hover:border-purple-500  rounded-full px-3 py-1 text-white font-medium text-md bg-gradient-to-r  from-purple-700 to-purple-700  ">
+                <FaBorderAll></FaBorderAll> Live
               </button>
             </a>
           </div>
@@ -60,10 +64,7 @@ const Details = () => {
           <div className=" w-full  grid lg:grid-cols-1 sm:grid-cols-4 grid-cols-2 gap-3">
             {product.smallImg.map((img, i) => (
               <>
-                <span
-                  key={i}
-                  className=" flex  justify-center items-center"
-                >
+                <span key={i} className=" flex  justify-center items-center">
                   <img
                     className="h-full w-full border border-blue-500"
                     src={img}
